@@ -1,0 +1,23 @@
+name: Lint
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Python + gdtoolkit
+        run: |
+          pip install gdtoolkit
+
+      - name: Check formatting
+        run: gdformat --check .
+
+      - name: Lint
+        run: gdlint .

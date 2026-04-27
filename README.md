@@ -3,4 +3,5 @@
 ```bash
 pip install pre-commit gdtoolkit
 pre-commit install
+pre-commit autoupdate
 ```
