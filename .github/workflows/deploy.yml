@@ -19,10 +19,10 @@ jobs:
           relative_export_path: ./build
 
       - name: Copy coi-serviceworker to build
-        run: cp coi-serviceworker.js ./build/web/coi-serviceworker.js
+        run: cp coi-serviceworker.js ./build/Web/coi-serviceworker.js
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/web
+          publish_dir: ./build/Web
