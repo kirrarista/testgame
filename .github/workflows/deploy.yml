@@ -11,13 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Cache Godot files
+      - name: Cache Godot import cache
         uses: actions/cache@v4
         with:
-          path: |
-            ~/.local/share/godot
-            .godot/imported
-          key: godot-${{ hashFiles('**/*.import') }}
+          path: .godot/imported
+          key: godot-import-${{ hashFiles('**/*.import') }}
 
       - name: Export Godot project
         uses: firebelley/godot-export@v5.2.1
