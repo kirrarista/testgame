@@ -31,6 +31,7 @@ jobs:
           godot_executable_download_url: "https://github.com/godotengine/godot/releases/download/4.6.2-stable/Godot_v4.6.2-stable_linux.x86_64.zip"
           godot_export_templates_download_url: "https://github.com/godotengine/godot/releases/download/4.6.2-stable/Godot_v4.6.2-stable_export_templates.tpz"
           relative_export_path: ./build
+          export_preset: "Web"
 
       - name: Copy coi-serviceworker to build
         run: cp coi-serviceworker.js ./build/Web/coi-serviceworker.js

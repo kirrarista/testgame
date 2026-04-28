@@ -39,7 +39,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.30540025, 0.27621296, 0.14232588, 1)
+color = Color(0.18174139, 0.30920303, 0.20328665, 1)
 
 [node name="Player" parent="." unique_id=1827628834 instance=ExtResource("2_h2yge")]
 
